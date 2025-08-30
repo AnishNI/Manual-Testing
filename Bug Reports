@@ -1,0 +1,46 @@
+🐞 FormaFit Website – Bug Reports
+🔴 Bug #001: Full Name Field Accepts Numbers and Special Characters
+- Severity: High
+- Steps to Reproduce:
+- Navigate to the registration form
+- Enter “John@123” in the Full Name field
+- Submit the form
+- Expected Result: Validation error for invalid characters
+- Actual Result: Form accepts input and proceeds
+- Notes: No regex validation applied
+
+🟠 Bug #002: Phone Number Field Allows Less Than 10 Digits
+- Severity: Medium
+- Steps to Reproduce:
+- Enter “98765” in the Phone Number field
+- Submit the form
+- Expected Result: Error message for incomplete number
+- Actual Result: Form accepts and submits
+- Notes: No length check enforced
+
+🟠 Bug #003: Email Field Accepts Invalid Format
+- Severity: Medium
+- Steps to Reproduce:
+- Enter “userexample.com” (missing @)
+- Submit the form
+- Expected Result: Validation error
+- Actual Result: Form accepts input
+- Notes: Regex pattern missing or misconfigured
+
+🟢 Bug #004: Password Field Does Not Enforce Complexity
+- Severity: Low
+- Steps to Reproduce:
+- Enter “password” (no uppercase, number, or symbol)
+- Submit the form
+- Expected Result: Error for weak password
+- Actual Result: Form accepts password
+- Notes: No complexity rules applied
+
+🔴 Bug #005: Submit Button Enabled Without Required Fields
+- Severity: High
+- Steps to Reproduce:
+- Leave all fields blank
+- Observe that Submit button is clickable
+- Expected Result: Button should be disabled
+- Actual Result: Button remains active
+- Notes: Missing front-end validation logic
