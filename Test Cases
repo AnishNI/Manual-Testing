@@ -1,0 +1,29 @@
+✅ FormaFit Website – Registration Form Test Cases
+1. Full Name Field Validation
+- TC001: Verify that the Full Name field accepts only alphabetic characters and spaces
+- TC002: Verify that entering numbers or special characters triggers a validation error
+- TC003: Verify minimum and maximum character limits (e.g., 2–50 characters)
+- TC004: Verify that leading/trailing spaces are trimmed automatically
+- TC005: Verify placeholder text and label visibility on all screen sizes
+2. Phone Number Field Validation
+- TC006: Verify that only numeric input is accepted
+- TC007: Verify that the field enforces a 10-digit format for Indian numbers
+- TC008: Verify error message when entering fewer or more than 10 digits
+- TC009: Verify that country code is either auto-filled or selectable
+- TC010: Verify that copy-paste and autofill do not bypass validation
+3. Email Field Validation
+- TC011: Verify that valid email formats are accepted (e.g., user@example.com)
+- TC012: Verify error message for invalid formats (e.g., missing “@” or domain)
+- TC013: Verify duplicate email detection if already registered
+- TC014: Verify that email field is case-insensitive
+4. Password Field Validation
+- TC015: Verify minimum password length (e.g., 8 characters)
+- TC016: Verify complexity rules (uppercase, lowercase, number, symbol)
+- TC017: Verify visibility toggle (eye icon) works correctly
+- TC018: Verify error messages for weak passwords
+5. Form Submission & UX
+- TC019: Verify that all required fields must be filled before enabling Submit
+- TC020: Verify loading indicator and success message after submission
+- TC021: Verify redirection to dashboard or confirmation page
+- TC022: Verify responsiveness across devices (mobile, tablet, desktop)
+- TC023: Verify accessibility (keyboard navigation, screen reader labels)
